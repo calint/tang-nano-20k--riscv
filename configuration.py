@@ -1,4 +1,5 @@
 #
+# if changed run `configuration-generate.py`
 # if `RAM_ADDR_WIDTH` is modified recompile `os`
 #
 RAM_FILE = "os/os.mem" # path to initial RAM content

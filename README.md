@@ -1,7 +1,5 @@
 # Tang Nano 20K: RISC-V
 
-> :bell: under construction
-
 * experiments with simple CPU design
 
 * implements the __rv32i__ instructions with the exception for: `fence`, `ecall`, `ebreak` and counters which are irrelevant for the intended use
@@ -11,9 +9,9 @@
 * ad-hoc 2-stage pipeline where a new instruction is fetched while previous executes
 
 ## implementation
-* __[Tango Nano 9K](https://www.aliexpress.com/item/1005003803994525.html)__
+* __[Tango Nano 20K](https://www.aliexpress.com/item/1005005581148230.html)__
 * 32 KB of RAM for instructions and data
-* 20 MHz with instructions executing in one cycle except branches which use two cycles due to creating "bubble" in the pipeline
+* 27 MHz with instructions executing in one cycle except branches which use two cycles due to creating "bubble" in the pipeline
 * UART to send and receive text (see [`etc/samples/os.c`](https://github.com/calint/tang-nano-9k--riscv/blob/master/etc/samples/os.c) for example)
 
 ## how-to with Gowin EDA 1.9.9.03:

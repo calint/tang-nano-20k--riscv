@@ -1,2 +1,1 @@
-## setup project device
-https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-9K/examples/led.html
+https://wiki.sipeed.com/hardware/en/tang/tang-nano-20k/nano-20k.html

@@ -168,7 +168,7 @@ module RAMIO #(
       uartrx_data_read <= 0;
       uartrx_go <= 1;
     end else begin
-      reA_prev   <= reA;
+      reA_prev <= reA;
       addrA_prev <= addrA;
       // if previous command was a read from uart then reset the read data
       if (addrA_prev == ADDR_UART_IN && reA_prev == 3'b001) begin

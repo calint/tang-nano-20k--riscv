@@ -1,4 +1,6 @@
-# Tang Nano 9K: RISC-V
+# Tang Nano 20K: RISC-V
+
+> :bell: under construction
 
 * experiments with simple CPU design
 

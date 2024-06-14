@@ -5,7 +5,7 @@
 
 module Top (
     input wire sys_clk,  // 27 MHz
-    input wire sys_rst_n,
+    input wire sys_rst,
     output wire [5:0] led,
     input wire uart_rx,
     output wire uart_tx,
@@ -28,7 +28,7 @@ module Top (
       .BAUD_RATE(`UART_BAUD_RATE)
   ) soc (
       .clk(soc_clk),
-      .rst(!sys_rst_n || !lock),
+      .rst(sys_rst || !lock),
       .led(led),
       .uart_rx(uart_rx),
       .uart_tx(uart_tx),

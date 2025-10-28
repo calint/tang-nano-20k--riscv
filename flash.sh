@@ -5,3 +5,4 @@
 
 # write flash
 openFPGALoader -b tangnano20k -f impl/pnr/riscv.fs
+

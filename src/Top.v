@@ -12,23 +12,14 @@ module Top (
     input wire btn1
 );
 
-  wire soc_clk;
-  wire lock;
-
-  Gowin_rPLL clk_rpll (
-      .clkin(sys_clk),  // 27 MHz
-      .clkout(soc_clk),  // 27 MHz
-      .lock(lock)  //output lock
-  );
-
   SoC #(
       .CLK_FREQ(27_000_000),
       .RAM_FILE(`RAM_FILE),
       .RAM_ADDR_WIDTH(`RAM_ADDR_WIDTH),
       .BAUD_RATE(`UART_BAUD_RATE)
   ) soc (
-      .clk(soc_clk),
-      .rst(sys_rst || !lock),
+      .clk(sys_clk),
+      .rst(sys_rst),
       .led(led),
       .uart_rx(uart_rx),
       .uart_tx(uart_tx),
